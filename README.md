@@ -1,1 +1,2 @@
-# mammoth-website
+# Initial page
+
