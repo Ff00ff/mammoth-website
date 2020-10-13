@@ -5,7 +5,12 @@ Even though Mammoth does not include a database driver and thus is not responsib
 ```typescript
 await wrapInTransaction((db) => {
   // This db instance and everything in this scope 
-  // should be inside a transaction.
+  // should be inside a transaction. So the below 
+  // insert statements are all inside a single 
+  // transaction.
+  await db.insertInto(db.foo).values({ name: `Test` });
+  
+  await db.insertInto(db.bar).values({ name: `Test` });
 });
 ```
 
