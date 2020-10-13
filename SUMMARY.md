@@ -3,7 +3,6 @@
 * [Mammoth](README.md)
 * [Getting started](getting-started.md)
 * [Defining tables](defining-tables.md)
-* [Database driver](database-driver.md)
 * [Transactions](transactions.md)
 
 ## Queries
