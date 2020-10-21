@@ -20,7 +20,7 @@ And the actual implementation to get this working is below.
 const wrapInTransaction = (callback: (db: Db) => any) => {
   const client = await pool.connect()
   try {
-    await client.query('BEGIN')
+    await client.query('BEGIN');
     
     const db = defineDb(tables, (query, parameters) => {
       const result = client.query(query, parameters);
