@@ -1,6 +1,6 @@
 # Defining tables
 
-Now that you created your db instance let’s zoom into why and how to define your tables. You define your tables so Mammoth understands the types of your columns. To define your tables you should use the `defineTable` call and you should pass the result to your db instance to make the table available through the db instance.
+Now that you created your db instance let’s zoom into why and how to define your tables. You define your tables so Mammoth understands the types of your columns and the command line interface can help you generate migrations. To define your tables you use the `defineTable` call and you pass the result to your db instance to make the table available through the db instance.
 
 The `defineTable` syntax should be very similar to SQL’s `CREATE TABLE` syntax.
 
@@ -22,7 +22,7 @@ This is equivalent to the below SQL.
 
 ```sql
 CREATE TABLE foo (
-  id uuid PRIMARY KEY DEFAULT ’gen_random_uuid()’,
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   name text NOT NULL,
   value integer
 );
