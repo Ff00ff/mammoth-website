@@ -3,7 +3,7 @@
 Mammoth supports migrations via `@ff00ff/mammoth-cli` command line interface. You can execute your migrations using this interface, but you can also generate migrations based on changes to your tables. This saves you from repeating yourself repeating yourself!
 
 ```text
-npm i -D @ff00ff/mammoth-cli
+npm i -D @ff00ff/mammoth-cli@beta
 ```
 
 Mammoth's command line interface contains two commands.
@@ -37,7 +37,7 @@ CREATE TABLE foo (
 );
 ```
 
-If you change your table definition and re-run `mammoth next` it will automatically generate the next migration file for you. For example: I add another column to `foo`.
+If you change your table definition and re-run `mammoth next` it will automatically generate the next migration file for you. For example: I add a new column `value` to table `foo`.
 
 ```typescript
 const foo = defineTable({
@@ -49,7 +49,7 @@ const foo = defineTable({
 
 And I run `mammoth next` again. This generates `migrations/002.sql` for me with the below contents.
 
-```text
+```sql
 ALTER TABLE foo ADD COLUMN value integer;
 ```
 

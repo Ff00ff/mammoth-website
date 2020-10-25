@@ -6,10 +6,3 @@
 * [Migrations](migrations.md)
 * [Transactions](transactions.md)
 
-## Queries
-
-* [Select](queries/select.md)
-* [Update](queries/update.md)
-* [Insert](queries/insert.md)
-* [Delete](queries/delete.md)
-
