@@ -46,9 +46,3 @@ db.with(
 
 The above is a crazy example what Mammoth can do. The best part is that the return type is automatically inferred. No worries you're making a mistake there. And all of this works without a build step. No need to have a file watcher running.
 
-Mammoth consists of a couple of repositories:
-
-* The query builder [https://github.com/ff00ff/mammoth](https://github.com/ff00ff/mammoth)
-* The accompanying command line interface [https://github.com/Ff00ff/mammoth-cli](https://github.com/Ff00ff/mammoth-cli)
-* This documentation website [https://github.com/Ff00ff/mammoth-website](https://github.com/Ff00ff/mammoth-website)
-

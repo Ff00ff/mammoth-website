@@ -5,19 +5,19 @@ Of course, first, you need to install Mammoth.
 {% tabs %}
 {% tab title="NPM" %}
 ```text
-npm i @ff00ff/mammoth@1.0.0
+npm i @ff00ff/mammoth
 ```
 {% endtab %}
 
 {% tab title="Yarn" %}
 ```
-yarn add @ff00ff/mammoth@1.0.0
+yarn add @ff00ff/mammoth
 ```
 {% endtab %}
 
 {% tab title="Deno" %}
 ```
-import { defineDb } from 'https://deno.land/x/mammoth@v1.0.0'
+import { defineDb } from 'https://deno.land/x/mammoth'
 ```
 {% endtab %}
 {% endtabs %}
