@@ -3,7 +3,7 @@
 Mammoth supports migrations via `@ff00ff/mammoth-cli` command line interface. You can execute your migrations using this interface, but you can also generate migrations based on changes to your tables. This saves you from repeating yourself repeating yourself!
 
 ```text
-npm i -D @ff00ff/mammoth-cli@beta
+npm i -D @ff00ff/mammoth-cli
 ```
 
 Mammoth's command line interface contains two commands.
