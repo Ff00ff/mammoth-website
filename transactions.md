@@ -17,13 +17,13 @@ await wrapInTransaction((db) => {
 And the actual implementation to get this working is below.
 
 ```typescript
-const wrapInTransaction = (callback: (db: Db) => any) => {
+const wrapInTransaction = async (callback: (db: Db) => any) => {
   const client = await pool.connect()
   try {
     await client.query('BEGIN');
     
-    const db = defineDb(tables, (query, parameters) => {
-      const result = client.query(query, parameters);
+    const db = defineDb(tables, async (query, parameters) => {
+      const result = await client.query(query, parameters);
       return {
         affectedCount: result.rowCount,
         rows: result.rows,
