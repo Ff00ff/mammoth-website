@@ -17,7 +17,7 @@ Migrations, or specifically `@ff00ff/mammoth-cli`, is in beta. You can start usi
 
 Migrations are written to `./migrations` and number `001` till `999` \(at some point you can squash them\). Migrations are written in pure SQL.
 
-### Generating migrations
+## Generating migrations
 
 Say, in a new project with no tables nor migrations, you define a table `foo`.
 
@@ -59,7 +59,7 @@ This should make it very easy to evolve your data model. Of course, you can alwa
 Even though Mammoth generates the migrations for you, you must review the migrations yourself before commiting the migrations.
 {% endhint %}
 
-### Applying migrations
+## Applying migrations
 
 Once your migrations are written, you can execute them through `mammoth migrate`. This executes the migrations in order one-by-one. Once a migration is applied, Mammoth stores this data in the `migration` table in your database, together with a checksum of the migration. You must not edit a migration after it has been applied.
 
